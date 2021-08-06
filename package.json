@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "wasm_dev": "echo 'This needs Rust and wasm-pack to be installed' && nodemon --watch wasm -e rs --exec 'wasm-pack build wasm'",
-    "wasm_build": "wasm-pack build --release wasm"
+    "wasm_build": "wasm-pack build --release wasm",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "11.0.1",
@@ -28,7 +29,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^7.0.1",
+    "husky": "^7.0.0",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "typescript": "^4.3.5"
