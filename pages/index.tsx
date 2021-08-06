@@ -41,7 +41,11 @@ export default function Home() {
     <div className={styles.main}>
       <p className={styles.title}>This is a basic Sum app.</p>
       <form onSubmit={formSubmit}>
-        <input type="text" ref={inputRef} />
+        <input
+          type="text"
+          ref={inputRef}
+          placeholder="comma separated numbers"
+        />
         <button type="submit">SUM !</button>
       </form>
       <WasmComponent numbers={numbers} />
